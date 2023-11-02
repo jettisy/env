@@ -1,7 +1,10 @@
 {
   "name": "@jettisy/env",
   "version": "0.1.0",
-  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/Schema.ts"
+  },
   "type": "module",
   "description": "A package for managing environment configurations",
   "devDependencies": {
