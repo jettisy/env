@@ -1,0 +1,25 @@
+{
+  "name": "@jettisy/env",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "type": "module",
+  "description": "A package for managing environment configurations",
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "bun",
+    "environment",
+    "env"
+  ],
+  "author": {
+    "name": "keef3ar",
+    "email": "keef3ar@tmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jettisy/env"
+  }
+}
