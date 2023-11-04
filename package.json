@@ -7,7 +7,7 @@
   },
   "type": "module",
   "description": "A package for managing environment configurations in Bun apps",
-  "peerDependencies": {
+  "devDependencies": {
     "bun-types": "latest",
     "typescript": "^5.2.2"
   },
