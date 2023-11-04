@@ -6,7 +6,7 @@
     "./schema": "./src/Schema.ts"
   },
   "type": "module",
-  "description": "A package for managing environment configurations",
+  "description": "A package for managing environment configurations in Bun apps",
   "peerDependencies": {
     "bun-types": "latest",
     "typescript": "^5.2.2"
@@ -14,7 +14,8 @@
   "keywords": [
     "bun",
     "environment",
-    "env"
+    "env",
+    "jettisy"
   ],
   "author": {
     "name": "keef3ar",
