@@ -26,6 +26,6 @@
     "url": "https://github.com/jettisy/env"
   },
   "scripts": {
-    "typecheck": "tsc && rm tsconfig.tsbuildinfo"
+    "typecheck": "tsc"
   }
 }
