@@ -45,5 +45,4 @@ const optional = Env.get("OPTIONAL"); // Returns a string or undefined
 
 The Env.get method allows you to access environment variables and ensures that they match the specified types.
 
-Contributing
 Feel free to contribute to this project or report issues on GitHub.

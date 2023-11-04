@@ -26,7 +26,7 @@
     "url": "git+https://github.com/jettisy/env.git"
   },
   "scripts": {
-    "typecheck": "tsc",
-    "publish": "tsc && npm publish"
+    "typecheck": "bun tsc",
+    "publish": "bun tsc && npm publish"
   }
 }
