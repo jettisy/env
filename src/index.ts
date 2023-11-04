@@ -1,3 +1,3 @@
-const Env = (await import("./Env.ts")).default;
-import Schema from "./Schema.ts";
+const Env = (await import("./Env")).default;
+import Schema from "./Schema";
 export { Env, Schema };

@@ -1,5 +1,6 @@
 import process from "process";
-import ValidationError from "./ValidationError.ts";
+import ValidationError from "./ValidationError";
+
 const env_ts = await loadEnvFile();
 type EnvFile = typeof env_ts;
 type EnvKey = Extract<keyof EnvFile, string>;
@@ -28,8 +29,7 @@ export default class Env {
         this.values.set(key, validated_value);
       } catch (error) {
         if (!(error instanceof ValidationError)) throw error;
-        const message = `"${key}" ${error.message}`;
-        throw message;
+        throw `"${key}" ${error.message}`;
       }
     }
   }

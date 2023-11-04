@@ -1,5 +1,5 @@
 import { validateNumber, validateString, validateBoolean } from "./ValidateFunctions";
-import { ValidateFn } from "./types/ValidateFn.ts";
+import { ValidateFn } from "./types/ValidateFn";
 
 export default class Schema<T> {
   public validateFn: ValidateFn<T>;

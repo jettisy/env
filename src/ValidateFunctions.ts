@@ -1,4 +1,4 @@
-import ValidationError from "./ValidationError.ts";
+import ValidationError from "./ValidationError";
 
 const validateNumber = (value: string): number => {
   const numValue = Number(value);
