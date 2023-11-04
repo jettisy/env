@@ -2,8 +2,7 @@
   "name": "@jettisy/env",
   "version": "0.1.0",
   "exports": {
-    ".": "./src/index.ts",
-    "./schema": "./src/Schema.ts"
+    ".": "./src/index.ts"
   },
   "type": "module",
   "description": "A package for managing environment configurations in Bun apps",

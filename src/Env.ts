@@ -41,6 +41,7 @@ async function loadEnvFile() {
     const module = await import(`../../../../env`);
     return module.default;
   } catch (error) {
+    console.log(error);
     console.error("MISSING env.ts file");
     process.exit(1);
   }
