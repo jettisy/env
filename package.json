@@ -26,6 +26,6 @@
     "url": "git+https://github.com/jettisy/env.git"
   },
   "scripts": {
-    "typecheck": "bun tsc",
+    "typecheck": "bun tsc"
   }
 }
