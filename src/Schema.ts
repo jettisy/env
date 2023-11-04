@@ -3,6 +3,7 @@ import { ValidateFn } from "./types/ValidateFn.ts";
 
 export default class Schema<T> {
   public validateFn: ValidateFn<T>;
+  public is_optional: boolean = false;
 
   private constructor(fn: ValidateFn<T>) {
     this.validateFn = fn;
@@ -21,10 +22,14 @@ export default class Schema<T> {
   }
 
   public optional(): Schema<T | undefined> {
-    const optionalFn: ValidateFn<T | undefined> = (value: string): T | undefined => {
-      if (value === "") return undefined;
+    const optionalFn: ValidateFn<T | undefined> = (
+      value: string | undefined,
+    ): T | undefined => {
+      if (value === undefined) return value;
       return this.validateFn(value);
     };
-    return new Schema(optionalFn);
+    const instance = new Schema(optionalFn);
+    instance.is_optional = true;
+    return instance;
   }
 }
