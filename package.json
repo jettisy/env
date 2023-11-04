@@ -27,7 +27,5 @@
   },
   "scripts": {
     "typecheck": "bun tsc",
-    "_comment": "\"publish\" is used to check types if npm publish call",
-    "publish": "bun tsc"
   }
 }
