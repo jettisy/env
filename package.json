@@ -1,6 +1,6 @@
 {
   "name": "@jettisy/env",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "exports": {
     ".": "./src/index.ts"
   },
@@ -27,6 +27,7 @@
   },
   "scripts": {
     "typecheck": "bun tsc",
-    "publish": "bun tsc && npm publish"
+    "_comment": "\"publish\" is used to check types if npm publish call",
+    "publish": "bun tsc"
   }
 }
