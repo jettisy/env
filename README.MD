@@ -6,7 +6,7 @@ You can install this package using the following command:
 ```shell
 bun add @jettisy/env
 ```
-Description
+
 @jettisy/env is a package designed to parse and validate environment variables in applications running on the Bun runtime environment. This package provides a simple and efficient way to work with your environment configurations by returning the expected data types.
 
 Please note that this package is not intended for use with Node.js.
