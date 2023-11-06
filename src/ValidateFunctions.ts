@@ -11,8 +11,9 @@ const validateString = (value: string): string => {
 };
 
 const validateBoolean = (value: string): boolean => {
-  if (value === "true" || value === "1") return true;
-  if (value === "false" || value === "0") return false;
+  const lc_value = value.toLowerCase();
+  if (lc_value === "true" || value === "1") return true;
+  if (lc_value === "false" || value === "0") return false;
   throw new ValidationError("boolean", value);
 };
 
